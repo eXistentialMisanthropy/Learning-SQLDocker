@@ -1,0 +1,12 @@
+CREATE TABLE ProductImages
+(
+	Id INT NOT NULL PRIMARY KEY,
+	Title NVARCHAR(MAX) NOT NULL,
+	[Path] NVARCHAR(MAX) NOT NULL,
+	ProductId INT NOT NULL
+)
+
+ALTER TABLE ProductImages WITH CHECK ADD CONSTRAINT [FK_ProductImages_Products] FOREIGN KEY(ProductId)
+REFERENCES Products(Id)
+
+ALTER TABLE ProductImages CHECK CONSTRAINT [FK_ProductImages_Products]

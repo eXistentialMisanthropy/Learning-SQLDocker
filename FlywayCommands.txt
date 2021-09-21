@@ -1,0 +1,2 @@
+docker run --rm -v I:/Programming/Tools/FlywayVols/sql:/flyway/sql flyway/flyway:latest baseline -url="jdbc:sqlserver://192.168.0.32:1433;databaseName=DessertStore" -user=sa -password=B@dP@55w0rd
+docker run --rm -v I:/Programming/Tools/FlywayVols/sql:/flyway/sql flyway/flyway:latest migrate -url="jdbc:sqlserver://192.168.0.32:1433;databaseName=DessertStore" -user=sa -password=B@dP@55w0rd

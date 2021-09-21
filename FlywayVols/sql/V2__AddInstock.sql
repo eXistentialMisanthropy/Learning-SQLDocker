@@ -1,0 +1,2 @@
+ALTER TABLE Products
+ADD Instock BIT DEFAULT(1) NOT NULL
